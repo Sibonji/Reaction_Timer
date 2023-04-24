@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tiffg1156-1L" LaunchTime="1681124802">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ReactionTimeDriver_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="ReactionTimeDriver_routed.rqs"/>
+  <File Type="RBD_FILE" Name="ReactionTimeDriver.rbd"/>
+  <File Type="NPI_FILE" Name="ReactionTimeDriver.npi"/>
+  <File Type="RNPI_FILE" Name="ReactionTimeDriver.rnpi"/>
+  <File Type="CFI_FILE" Name="ReactionTimeDriver.cfi"/>
+  <File Type="RCFI_FILE" Name="ReactionTimeDriver.rcfi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ReactionTimeDriver.ltx"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ReactionTimeDriver_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-SYSDEF" Name="ReactionTimeDriver.sysdef"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ReactionTimeDriver_postroute_physopt.dcp"/>
+  <File Type="BITSTR-MMI" Name="ReactionTimeDriver.mmi"/>
+  <File Type="BITSTR-BMM" Name="ReactionTimeDriver_bd.bmm"/>
+  <File Type="PHYSOPT-DCP" Name="ReactionTimeDriver_physopt.dcp"/>
+  <File Type="BG-BGN" Name="ReactionTimeDriver.bgn"/>
+  <File Type="OPT-DCP" Name="ReactionTimeDriver_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="ReactionTimeDriver.hwdef"/>
+  <File Type="BG-BIT" Name="ReactionTimeDriver.bit"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PA-TCL" Name="ReactionTimeDriver.tcl"/>
+  <File Type="REPORTS-TCL" Name="ReactionTimeDriver_reports.tcl"/>
+  <File Type="BG-DRC" Name="ReactionTimeDriver.drc"/>
+  <File Type="PDI-FILE" Name="ReactionTimeDriver.pdi"/>
+  <File Type="RDI-RDI" Name="ReactionTimeDriver.vdi"/>
+  <File Type="BG-BIN" Name="ReactionTimeDriver.bin"/>
+  <File Type="PLACE-DCP" Name="ReactionTimeDriver_placed.dcp"/>
+  <File Type="BITSTR-MSK" Name="ReactionTimeDriver.msk"/>
+  <File Type="PWROPT-DCP" Name="ReactionTimeDriver_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ReactionTimeDriver_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BITSTR-RBT" Name="ReactionTimeDriver.rbt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ReactionTimeDriver_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-NKY" Name="ReactionTimeDriver.nky"/>
+  <File Type="ROUTE-DCP" Name="ReactionTimeDriver_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ReactionTimeDriver_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ReactionTimeDriver_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="ReactionTimeDriver_timing_summary_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../BCDToSevenSeg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Counting.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Mux.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Random.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ReactionTime.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SlowClock.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../binaryToBCD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../flipFlop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ReactionTimeDriver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ReactionTimeDriver"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

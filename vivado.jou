@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Apr 17 22:28:21 2023
+# Process ID: 4027
+# Current directory: /home/bsibgatullin/study_projects/Reaction-Timer
+# Command line: vivado
+# Log file: /home/bsibgatullin/study_projects/Reaction-Timer/vivado.log
+# Journal file: /home/bsibgatullin/study_projects/Reaction-Timer/vivado.jou
+# Running On: bsibgatullin-ThinkPad-E14-Gen-2, OS: Linux, CPU Frequency: 4159.042 MHz, CPU Physical cores: 4, Host memory: 33348 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.xpr
+update_compile_order -fileset sources_1
+create_fileset -simset rand_tb
+file mkdir /home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.srcs/rand_tb/new
+set_property SOURCE_SET sources_1 [get_filesets rand_tb]
+close [ open /home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.srcs/rand_tb/new/rand_tb.v w ]
+add_files -fileset rand_tb /home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.srcs/rand_tb/new/rand_tb.v
+update_compile_order -fileset rand_tb
+launch_simulation -simset [get_filesets rand_tb ]
+launch_simulation -simset [get_filesets rand_tb ]
+launch_simulation -simset [get_filesets rand_tb ]
+set_property is_enabled false [get_files  /home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v]
+set_property is_enabled false [get_files  /home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v]
+update_compile_order -fileset rand_tb
+launch_simulation -simset [get_filesets rand_tb ]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v] -no_script -reset -force -quiet
+remove_files  /home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v
+export_ip_user_files -of_objects  [get_files /home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v] -no_script -reset -force -quiet
+remove_files  /home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v
+delete_fileset [ get_filesets sim_1 ]
+file delete -force /home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.srcs/sim_1
+launch_simulation -simset [get_filesets rand_tb ]
+launch_simulation -simset [get_filesets rand_tb ]
+source rand_tb.tcl
+close_sim
+launch_simulation -simset [get_filesets rand_tb ]
+source rand_tb.tcl
+close_sim
+add_files -norecurse /home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

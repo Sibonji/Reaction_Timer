@@ -1,0 +1,356 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Apr 10 14:06:13 2023
+# Process ID: 4523
+# Current directory: /home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.runs/synth_1
+# Command line: vivado -log ReactionTimeDriver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ReactionTimeDriver.tcl
+# Log file: /home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.runs/synth_1/ReactionTimeDriver.vds
+# Journal file: /home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.runs/synth_1/vivado.jou
+# Running On: bsibgatullin-ThinkPad-E14-Gen-2, OS: Linux, CPU Frequency: 2504.774 MHz, CPU Physical cores: 4, Host memory: 33348 MB
+#-----------------------------------------------------------
+source ReactionTimeDriver.tcl -notrace
+Command: synth_design -top ReactionTimeDriver -part xc7a200tiffg1156-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4541
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/bsibgatullin/Vivado_and_Vitis/Vivado_real/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-10929] literal value 'b11010011011100101 truncated to fit in 16 bits [/home/bsibgatullin/study_projects/Reaction-Timer/Random.v:5]
+INFO: [Synth 8-11241] undeclared symbol 'clear', assumed default net type 'wire' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v:25]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1650.359 ; gain = 307.832 ; free physical = 25828 ; free virtual = 60017
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1064.805; parent = 859.244; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2652.688; parent = 1653.332; children = 999.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ReactionTimeDriver' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ReactionTime' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SlowClock' [/home/bsibgatullin/study_projects/Reaction-Timer/SlowClock.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SlowClock' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/SlowClock.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Random' [/home/bsibgatullin/study_projects/Reaction-Timer/Random.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'flipFlop' [/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'flipFlop' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Random' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/Random.v:1]
+WARNING: [Synth 8-689] width (14) of port connection 'rnd' does not match port width (16) of module 'Random' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v:29]
+INFO: [Synth 8-6157] synthesizing module 'Counting' [/home/bsibgatullin/study_projects/Reaction-Timer/Counting.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Counting' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/Counting.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ReactionTime' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v:1]
+WARNING: [Synth 8-7071] port 'testL' of module 'ReactionTime' is unconnected for instance 'nolabel_line21' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:21]
+WARNING: [Synth 8-7023] instance 'nolabel_line21' of module 'ReactionTime' has 7 connections declared, but only 6 given [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:21]
+INFO: [Synth 8-6157] synthesizing module 'binaryToBCD' [/home/bsibgatullin/study_projects/Reaction-Timer/binaryToBCD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'binaryToBCD' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/binaryToBCD.v:1]
+WARNING: [Synth 8-7071] port 'start' of module 'binaryToBCD' is unconnected for instance 'nolabel_line25' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:25]
+WARNING: [Synth 8-7023] instance 'nolabel_line25' of module 'binaryToBCD' has 7 connections declared, but only 6 given [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:25]
+INFO: [Synth 8-6157] synthesizing module 'BCDToSevenSeg' [/home/bsibgatullin/study_projects/Reaction-Timer/BCDToSevenSeg.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bsibgatullin/study_projects/Reaction-Timer/BCDToSevenSeg.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'BCDToSevenSeg' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/BCDToSevenSeg.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'ReactionTimeDriver' (0#1) [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:1]
+WARNING: [Synth 8-3848] Net q in module/entity flipFlop does not have driver. [/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v:3]
+WARNING: [Synth 8-3848] Net testL in module/entity ReactionTime does not have driver. [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v:4]
+WARNING: [Synth 8-3848] Net clear in module/entity ReactionTime does not have driver. [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v:25]
+WARNING: [Synth 8-3848] Net testL in module/entity ReactionTimeDriver does not have driver. [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:4]
+WARNING: [Synth 8-7129] Port start in module binaryToBCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port q in module flipFlop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module flipFlop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module flipFlop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d in module flipFlop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[6] in module ReactionTime is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[5] in module ReactionTime is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[4] in module ReactionTime is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[3] in module ReactionTime is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[2] in module ReactionTime is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[1] in module ReactionTime is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[0] in module ReactionTime is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[6] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[5] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[4] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[3] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[2] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[1] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[0] in module ReactionTimeDriver is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1724.297 ; gain = 381.770 ; free physical = 25909 ; free virtual = 60101
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1064.805; parent = 859.244; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2723.656; parent = 1724.301; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1742.109 ; gain = 399.582 ; free physical = 25902 ; free virtual = 60094
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1064.805; parent = 859.244; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2741.469; parent = 1742.113; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tiffg1156-1L
+INFO: [Device 21-403] Loading part xc7a200tiffg1156-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1750.113 ; gain = 407.586 ; free physical = 25900 ; free virtual = 60092
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1064.805; parent = 859.244; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2749.473; parent = 1750.117; children = 999.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ReactionTime'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   start |                              000 |                              000
+                    init |                              001 |                              001
+               countdown |                              010 |                              010
+                    test |                              011 |                              011
+                 iSTATE0 |                              100 |                              110
+                 iSTATE1 |                              101 |                              101
+                  iSTATE |                              110 |                              100
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ReactionTime'
+WARNING: [Synth 8-327] inferring latch for variable 'hex_reg' [/home/bsibgatullin/study_projects/Reaction-Timer/BCDToSevenSeg.v:10]
+WARNING: [Synth 8-327] inferring latch for variable 'HEX0_reg' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'HEX1_reg' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'HEX2_reg' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'HEX3_reg' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTimeDriver.v:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1781.855 ; gain = 439.328 ; free physical = 25807 ; free virtual = 60017
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1069.550; parent = 863.990; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2781.215; parent = 1781.859; children = 999.355
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 56    
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 8     
+	   2 Input   14 Bit        Muxes := 3     
+	   5 Input   14 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 42    
+	   7 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 25    
+	   5 Input    1 Bit        Muxes := 9     
+	  11 Input    1 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port testL[6] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[5] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[4] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[3] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[2] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[1] in module ReactionTimeDriver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testL[0] in module ReactionTimeDriver is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25514 ; free virtual = 59737
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1349.913; parent = 1144.382; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25514 ; free virtual = 59737
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1350.702; parent = 1145.171; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (HEX0_reg[6]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX0_reg[5]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX0_reg[4]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX0_reg[3]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX0_reg[2]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX0_reg[1]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX0_reg[0]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX1_reg[6]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX1_reg[5]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX1_reg[4]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX1_reg[3]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX1_reg[2]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX1_reg[1]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX1_reg[0]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX2_reg[6]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX2_reg[5]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX2_reg[4]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX2_reg[3]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX2_reg[2]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX2_reg[1]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX2_reg[0]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX3_reg[6]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX3_reg[5]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX3_reg[4]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX3_reg[3]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX3_reg[2]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX3_reg[1]) is unused and will be removed from module ReactionTimeDriver.
+WARNING: [Synth 8-3332] Sequential element (HEX3_reg[0]) is unused and will be removed from module ReactionTimeDriver.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25513 ; free virtual = 59736
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1352.698; parent = 1147.167; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25521 ; free virtual = 59744
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1353.116; parent = 1147.585; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25521 ; free virtual = 59744
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1353.132; parent = 1147.601; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25521 ; free virtual = 59744
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1353.265; parent = 1147.733; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25521 ; free virtual = 59744
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1353.331; parent = 1147.800; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25521 ; free virtual = 59744
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1353.347; parent = 1147.815; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25521 ; free virtual = 59744
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1353.362; parent = 1147.831; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    17|
+|3     |LUT1   |     4|
+|4     |LUT2   |    15|
+|5     |LUT3   |    42|
+|6     |LUT4   |    65|
+|7     |LUT5   |    26|
+|8     |LUT6   |    66|
+|9     |FDRE   |    96|
+|10    |LD     |    28|
+|11    |IBUF   |     3|
+|12    |OBUF   |    29|
+|13    |OBUFT  |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------+------+
+|      |Instance           |Module          |Cells |
++------+-------------------+----------------+------+
+|1     |top                |                |   399|
+|2     |  h0               |BCDToSevenSeg   |     9|
+|3     |  h1               |BCDToSevenSeg_0 |     9|
+|4     |  h2               |BCDToSevenSeg_1 |     9|
+|5     |  h3               |BCDToSevenSeg_2 |     9|
+|6     |  nolabel_line21   |ReactionTime    |   283|
+|7     |    countingdown   |Counting        |    46|
+|8     |    countingup     |Counting_3      |    48|
+|9     |    nolabel_line24 |SlowClock       |    72|
+|10    |  nolabel_line25   |binaryToBCD     |    40|
++------+-------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25521 ; free virtual = 59744
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1353.409; parent = 1147.878; children = 205.561
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2969.355; parent = 1970.000; children = 999.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 70 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.996 ; gain = 627.469 ; free physical = 25522 ; free virtual = 59745
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1970.004 ; gain = 627.469 ; free physical = 25522 ; free virtual = 59745
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1972.965 ; gain = 0.000 ; free physical = 25643 ; free virtual = 59869
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2067.770 ; gain = 0.000 ; free physical = 25552 ; free virtual = 59791
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  LD => LDCE: 28 instances
+
+Synth Design complete, checksum: 5b02978e
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2067.770 ; gain = 725.242 ; free physical = 25759 ; free virtual = 59998
+INFO: [Common 17-1381] The checkpoint '/home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.runs/synth_1/ReactionTimeDriver.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ReactionTimeDriver_utilization_synth.rpt -pb ReactionTimeDriver_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 14:06:32 2023...

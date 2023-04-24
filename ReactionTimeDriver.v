@@ -1,5 +1,5 @@
 module ReactionTimeDriver (
-	input wire startB, stopB, clearB, clk,
+	input wire startB, clearB, clk,
 	output wire led,
 	output reg[6:0] testL,
 	output reg[6:0] HEX0, HEX1, HEX2, HEX3
@@ -19,7 +19,7 @@ parameter   start = 3'b000,
 			late = 3'b110;
 
 ReactionTime(
-	.startB(~startB),.stopB(~stopB),.clearB(~clearB),.clk(clk),.led(led),.state(currentState),.reaction(reaction)
+	.startB(~startB),.clearB(~clearB),.clk(clk),.led(led),.state(currentState),.reaction(reaction)
 );
 
 binaryToBCD (

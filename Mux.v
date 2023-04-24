@@ -1,8 +1,17 @@
-module Mux(
-	input wire din_0, din_1, sel, 
-	output reg mux_out
-	);
+//////////////////////////////////////////////////////////////////////////////////
+//
+// Revision: module approved v1.0
+//
+//////////////////////////////////////////////////////////////////////////////////
 
+module Mux(
+	input wire din_0,
+	input wire din_1,
+	input wire sel, 
+	output reg mux_out
+);
+
+//probably need to change always block to continuous statement (tristate)
 
 always @*
 	if (sel == 1'b0)

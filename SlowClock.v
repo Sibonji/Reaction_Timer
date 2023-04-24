@@ -1,25 +1,22 @@
 module SlowClock(
-	input wire clk, reset, 
+	input wire clk, 
+    input wire areset, 
 	output reg clk_1Hz
 );
 
 reg [27:0] counter;
 
-always@(posedge reset or posedge clk)
-begin
-    if (reset == 1'b1)
-        begin
-            clk_1Hz <= 0;
+always@(posedge areset or posedge clk) begin
+    if (areset) begin
+        clk_1Hz <= 0;
+        counter <= 0;
+    end
+    else begin
+        counter <= counter + 1;
+        if (counter == 1) begin
             counter <= 0;
+            clk_1Hz <= ~clk_1Hz;
         end
-    else
-        begin
-            counter <= counter + 1;
-            if ( counter == 50_000)
-                begin
-                    counter <= 0;
-                    clk_1Hz <= ~clk_1Hz;
-                end
-        end
+    end
 end
 endmodule   

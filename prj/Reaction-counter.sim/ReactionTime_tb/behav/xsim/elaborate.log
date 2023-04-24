@@ -1,0 +1,95 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/bsibgatullin/Vivado_and_Vitis/Vivado_real/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReactionTime_tb_behav xil_defaultlib.ReactionTime_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 14 differs from formal bit length 16 for port 'rnd' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 14 for port 'limit' [/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v" Line 1. Module ReactionTime doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/SlowClock.v" Line 1. Module SlowClock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Random.v" Line 1. Module Random doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Counting.v" Line 1. Module Counting doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Counting.v" Line 1. Module Counting doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v" Line 1. Module ReactionTime doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/SlowClock.v" Line 1. Module SlowClock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Random.v" Line 1. Module Random doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" Line 7. Module Mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" Line 7. Module flipFlop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Counting.v" Line 1. Module Counting doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bsibgatullin/study_projects/Reaction-Timer/Counting.v" Line 1. Module Counting doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SlowClock
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.flipFlop
+Compiling module xil_defaultlib.Random
+Compiling module xil_defaultlib.Counting
+Compiling module xil_defaultlib.ReactionTime
+Compiling module xil_defaultlib.ReactionTime_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReactionTime_tb_behav

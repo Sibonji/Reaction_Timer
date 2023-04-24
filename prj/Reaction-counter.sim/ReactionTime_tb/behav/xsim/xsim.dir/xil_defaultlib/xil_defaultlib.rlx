@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/bsibgatullin/study_projects/Reaction-Timer/Counting.v,1682297855,verilog,,/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v,,Counting,,,,,,,,
+/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v,1681759578,verilog,,/home/bsibgatullin/study_projects/Reaction-Timer/Random.v,,Mux,,,,,,,,
+/home/bsibgatullin/study_projects/Reaction-Timer/Random.v,1682295079,verilog,,/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v,,Random,,,,,,,,
+/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v,1682298891,verilog,,/home/bsibgatullin/study_projects/Reaction-Timer/SlowClock.v,,ReactionTime,,,,,,,,
+/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime_tb.v,1682297957,verilog,,,,ReactionTime_tb,,,,,,,,
+/home/bsibgatullin/study_projects/Reaction-Timer/SlowClock.v,1682298714,verilog,,/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v,,SlowClock,,,,,,,,
+/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v,1681760723,verilog,,/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime_tb.v,,flipFlop,,,,,,,,
+/home/bsibgatullin/study_projects/Reaction-Timer/prj/Reaction-counter.sim/ReactionTime_tb/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,

@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study_projects/Reaction-Timer/Counting.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counting
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study_projects/Reaction-Timer/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study_projects/Reaction-Timer/Random.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Random
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReactionTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study_projects/Reaction-Timer/SlowClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SlowClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study_projects/Reaction-Timer/flipFlop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flipFlop
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study_projects/Reaction-Timer/ReactionTime_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReactionTime_tb
